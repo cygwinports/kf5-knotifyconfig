@@ -14,7 +14,7 @@ libKF5NotifyConfig5_CONTENTS="
 	usr/share/doc/
 	usr/share/locale/
 "
-libKF5NotifyConfig_devel_REQUIRES="libdbusmenu-qt5-devel libKF5Codecs-devel libKF5Config-devel libKF5CoreAddons-devel libKF5IconThemes-devel libKF5Service-devel libKF5WindowSystem-devel libphonon4qt5-devel libQt5Core-devel libQt5Gui-devel libQt5X11Extras-devel"
+libKF5NotifyConfig_devel_REQUIRES="libKF5I18n-devel libKF5KIO-devel libphonon4qt5-devel libQt5Core-devel"
 libKF5NotifyConfig_devel_CONTENTS="
 	usr/include/KF5/KNotifyConfig/
 	usr/include/KF5/knotifyconfig_version.h
