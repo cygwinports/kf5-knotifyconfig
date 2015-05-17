@@ -1,0 +1,24 @@
+inherit kf5
+
+NAME="kf5-knotifyconfig"
+VERSION=5.10.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 desktop notification configuration dialog library"
+DESCRIPTION="KNotifyConfig provides a configuration dialog for desktop
+notifications which can be embedded in your application."
+
+PKG_NAMES="libKF5NotifyConfig5 libKF5NotifyConfig-devel"
+libKF5NotifyConfig5_CONTENTS="
+	usr/bin/cygKF5NotifyConfig-5.dll
+	usr/share/doc/
+	usr/share/locale/
+"
+libKF5NotifyConfig_devel_REQUIRES="libdbusmenu-qt5-devel libKF5Codecs-devel libKF5Config-devel libKF5CoreAddons-devel libKF5IconThemes-devel libKF5Service-devel libKF5WindowSystem-devel libphonon4qt5-devel libQt5Core-devel libQt5Gui-devel libQt5X11Extras-devel"
+libKF5NotifyConfig_devel_CONTENTS="
+	usr/include/KF5/KNotifyConfig/
+	usr/include/KF5/knotifyconfig_version.h
+	usr/lib/cmake/KF5NotifyConfig/
+	${QT5_MKSPECSDIR#/}/modules/qt_KNotifyConfig.pri
+	usr/lib/libKF5NotifyConfig.dll.a
+"
